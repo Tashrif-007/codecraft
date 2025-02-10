@@ -3,7 +3,7 @@ import { ConvexHttpClient } from "convex/browser";
 import { api } from "../../../../convex/_generated/api";
 import Link from "next/link";
 import { Blocks, Code2, Sparkles } from "lucide-react";
-import { SignedIn } from "@clerk/nextjs";
+import { SignedIn, SignedOut, SignIn, SignInButton } from "@clerk/nextjs";
 import ThemeSelector from "./ThemeSelector";
 import LanguageSelector from "./LanguageSelector";
 import RunButton from "./RunButton";
@@ -97,6 +97,9 @@ async function Header() {
           </SignedIn>
 
           <div className="pl-3 border-l border-gray-800">
+            <SignedOut>
+              <SignInButton/>
+            </SignedOut>
             <HeaderProfileBtn />
           </div>
         </div>
