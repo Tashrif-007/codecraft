@@ -13,7 +13,7 @@ function CopyButton({code}:{code:string}) {
     }
 
   return (
-    <button onClick={copyToClipboard} className="p-2 hover:bg-white/10 rouned-lg transition-all duration-200 group relative">
+    <button onClick={copyToClipboard} className="p-2 hover:bg-white/10 rouned-lg transition-all duration-200 group relative" type="button">
         {copied ? (
             <Check className="size-4 text-green-400" />
         ) : (
