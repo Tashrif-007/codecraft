@@ -24,7 +24,8 @@ function ShareSnippetDialog({onClose}: {onClose: () => void}) {
             setTitle("");
             toast.success("Snippet created successfully")
         } catch (error) {
-            toast.error("Failed to create snippet")
+            toast.error("Failed to create snippet");
+            console.log(error);
         } finally {
             setIsSharing(false);
         }

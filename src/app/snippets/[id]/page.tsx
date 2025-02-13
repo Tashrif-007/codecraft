@@ -9,9 +9,6 @@ import NavigationHeader from "@/components/NavigationHeader";
 import { Clock, Code, MessageSquare, User } from "lucide-react";
 import { Editor } from "@monaco-editor/react";
 import { defineMonacoThemes, LANGUAGE_CONFIG } from "@/app/(root)/constants";
-//import CopyButton from "./_components/CopyButton";
-//import Comments from "./_components/Comments";
-import Image from "next/image";
 import Comments from "./_components/Comments";
 import CopyButton from "./_components/CopyButton";
 
