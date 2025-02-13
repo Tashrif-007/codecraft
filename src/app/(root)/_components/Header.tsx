@@ -97,9 +97,6 @@ async function Header() {
           </SignedIn>
 
           <div className="pl-3 border-l border-gray-800">
-            <SignedOut>
-              <SignInButton/>
-            </SignedOut>
             <HeaderProfileBtn />
           </div>
         </div>
